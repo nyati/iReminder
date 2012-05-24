@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/restaurant"
+          android:icon="@drawable/forkandknife"
+          android:title="@string/restaurant" />
+    
+    <item android:id="@+id/coffee"
+          android:title="@string/coffee" />
+          
+    <item android:id="@+id/pizza"
+          android:icon="@drawable/pie"
+          android:title="@string/pizza" />
+    
+    <item android:id="@+id/gas"
+    	  android:icon="@drawable/gaspump"
+          android:title="@string/gas" />       
+     
+          
+</menu>

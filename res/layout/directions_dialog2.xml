@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/directions_layout2"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/black_bg">
+
+
+    <ImageView android:id="@+id/directions_logo2"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+    />
+
+	<TextView android:id="@+id/direction_title2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/directions_logo2"
+		android:gravity="center_horizontal"
+		android:text="@string/directions_title"
+		>
+	</TextView>
+
+
+	<Button android:layout_height="wrap_content"
+		android:layout_below="@+id/directions_logo2"
+		android:layout_width="fill_parent"
+		android:id="@+id/to_here"
+		android:textStyle="italic"
+		android.textSize="0.4"
+		>
+	</Button>
+
+	<Button android:layout_height="wrap_content"
+		android:layout_below="@+id/to_here"
+		android:layout_width="fill_parent"
+		android:id="@+id/from_here"
+		android:textStyle="italic"
+		android.textSize="0.4"
+		>
+	</Button>
+	
+	<Button android:layout_height="wrap_content"
+		android:layout_below="@+id/from_here"
+		android:layout_width="wrap_content"
+		android:id="@+id/close_dialog2"
+		android:layout_centerHorizontal="true"
+		android:text="@string/close_dialog"
+		android.textSize="0.4"
+		>
+	</Button>
+
+</RelativeLayout>

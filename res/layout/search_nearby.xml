@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/search_nearby_layout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/black_bg">
+    
+       <!-- search box and search button -->	
+	<LinearLayout 
+		android:id="@+id/searchBoxLayout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentTop="true"
+		
+		>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/search_label" />
+		<EditText android:id="@+id/search_box" 
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"/>
+		<Button android:id="@+id/search_button" 
+	  		android:text="@string/search_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />	
+			
+	</LinearLayout>
+    
+    <!-- Current address label -->
+    
+	<TextView android:id="@+id/myAddrLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:lines="2"
+			android:layout_below="@id/searchBoxLayout"
+			android:textStyle="italic"
+			android.textSize="0.5"
+			/>
+    
+    
+     <View
+            android:id="@+id/separator1"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/myAddrLabel"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+    
+    <!-- list of search results -->
+    
+    <ListView android:id="@+id/item_list"
+          android:layout_below="@id/separator1"
+          android:layout_width="fill_parent"
+          android:smoothScrollbar="true"
+          android:scrollbarStyle="insideInset"
+          android:layout_height="285dip"/>
+  	
+	     <View
+            android:id="@+id/separator2"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/item_list"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+	
+		
+		<Button android:id="@+id/prev_page" 
+	  		android:text="@string/prev_page"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/separator2"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_height="wrap_content" />
+		
+		<Button android:id="@+id/next_page" 
+	  		android:text="@string/next_page"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/separator2"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" />
+				
+		<TextView android:id="@+id/result_count"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/separator2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+        	android:layout_height="wrap_content" />
+	
+</RelativeLayout>

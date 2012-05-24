@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/black_bg"
+		android:id="@+id/scrllvwNo1"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbarStyle="insideInset"
+		> 
+
+<LinearLayout
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	>
+
+   <!-- Title field -->	
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/title" />
+		<EditText android:id="@+id/title" 
+		 	android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center"/>
+	</LinearLayout>
+
+     <View
+            android:id="@+id/sep_rem_edit0"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+	<!-- Address Field -->
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/addr" />
+		<EditText android:id="@+id/addr" 
+		  	android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center"/>
+</LinearLayout>
+
+
+	<!-- Address selection buttons -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		>
+		
+		<Button android:id="@+id/select_from_bookmarks" 
+	  		android:text="@string/from_bookmarks"
+	  		android:textSize="12sp" 
+	  		android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" />
+			
+		<Button android:id="@+id/use_current" 
+	  		android:text="@string/use_current_loc"
+	  		android:textSize="12sp" 
+	  		android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" />	
+
+	</LinearLayout>
+	
+	
+     <View
+            android:id="@+id/sep_rem_edit1"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+	<!--  enable/disable radio button -->
+	
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/status" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	  <RadioGroup
+		android:id="@+id/state"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<RadioButton
+			android:id="@+id/enable"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/enable"
+		>
+		</RadioButton>
+		
+		<RadioButton
+			android:id="@+id/disable"	
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/disable"
+		>
+		</RadioButton>
+	
+	  </RadioGroup>
+
+	</LinearLayout>
+
+     <View
+            android:id="@+id/sep_rem_edit2"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+
+	<!--  range  -->
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/range" />		
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+<!--
+	  <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/range_prompt" />
+-->
+	  <EditText android:id="@+id/range" 
+		android:layout_width="100dip"
+		android:layout_height="wrap_content" 
+		android:layout_weight="0"/>
+	  <TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/range_units" />				
+				
+	</LinearLayout>
+
+     <View
+            android:id="@+id/sep_rem_edit3"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+	<!-- trigger event settings -->
+		
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/event" />	
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	  <CheckBox
+		android:id="@+id/on_entry"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/on_entry"
+		>
+	  </CheckBox>
+	  <CheckBox
+		android:id="@+id/on_exit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/on_exit"
+		>
+	  </CheckBox>
+	</LinearLayout>
+
+     <View
+            android:id="@+id/sep_rem_edit4"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+	<!--  alert type radio button -->	
+ 
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/alert" />	
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	  <CheckBox
+		android:id="@+id/ring"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/ring"
+		>
+	  </CheckBox>
+	  <CheckBox
+		android:id="@+id/vibrate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/vibrate"
+		>
+	  </CheckBox>
+	  <CheckBox
+		android:id="@+id/flash"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/flash"
+		>
+	  </CheckBox>		
+
+	</LinearLayout>
+
+     <View
+            android:id="@+id/sep_rem_edit5"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+
+	<!-- Body of Reminder -->
+	
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/body" />
+	<EditText android:id="@+id/body" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:scrollbars="vertical" />
+	
+	
+	<!-- Confirm/Cancel/Delete Buttons -->
+	
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<Button android:id="@+id/confirm_rem" 
+	  		android:text="@string/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+			
+		<Button android:id="@+id/cancel_rem" 
+	  		android:text="@string/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />	
+			
+	    <Button android:id="@+id/delete_rem" 
+	  		android:text="@string/delete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />			
+	
+	</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

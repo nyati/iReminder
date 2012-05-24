@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:id="@+id/bookmark_row_layout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+>
+
+<TextView
+android:id="@+id/bmark_name"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="15sp"
+android:textStyle="bold"
+>
+</TextView>
+
+<TextView
+android:id="@+id/bmark_address"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="13sp"
+android:typeface="normal"
+>
+</TextView>
+
+<Button android:id="@+id/bookmark_directions" 
+	android:text="@string/bookmark_directions"
+	android:textSize="12sp" 
+	android:textStyle="bold"
+	android:layout_width="wrap_content"
+	android:layout_height="35dip"
+	android:layout_gravity="right"
+/>
+
+
+</LinearLayout>

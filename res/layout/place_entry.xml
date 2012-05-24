@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:id="@+id/row_layout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/black_bg_small"
+>
+
+<!--
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+>
+-->
+
+<TextView
+android:id="@+id/place_name"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="15sp"
+android:textStyle="bold"
+>
+</TextView>
+
+<TextView
+android:id="@+id/address"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="13sp"
+android:typeface="normal"
+>
+</TextView>
+
+<TextView
+android:id="@+id/phone"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="13sp"
+android:typeface="normal"
+>
+</TextView>
+
+<TextView
+android:id="@+id/distance"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="13sp"
+android:typeface="normal"
+>
+</TextView>
+
+
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="right"
+>
+
+		<Button android:id="@+id/directions" 
+	  		android:text="@string/directions"
+	  		android:textSize="12sp" 
+	  		android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="35dip"/>
+
+
+		<Button android:id="@+id/bookmark" 
+	  		android:text="@string/bookmark"
+	  		android:textSize="12sp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="35dip" />
+
+</LinearLayout>
+
+</LinearLayout>

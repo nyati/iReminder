@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/black_bg"
+	android:id="@+id/bookmark_list_layout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+
+
+	<LinearLayout 
+      	android:id="@+id/bookmark_list"
+      	android:layout_width="fill_parent"
+    	android:layout_height="640px"
+    	android:orientation="vertical"
+    	>
+    
+    <ListView android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+        android:smoothScrollbar="true"
+        android:scrollbarStyle="insideInset"
+       	/>
+  	<TextView android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+       	android:text="@string/no_bookmarks"/>
+	
+	</LinearLayout>
+
+	<Button android:id="@+id/add_loc" 
+		android:text="@string/add_loc"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"
+		android:drawableLeft="@drawable/plus"
+		android:gravity="center"
+		/>
+
+</RelativeLayout>

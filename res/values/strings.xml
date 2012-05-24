@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    <!-- Home --> 
+    <string name="my_reminders">Set Reminders</string>
+    <string name="loc_bookmarks">Bookmark Places</string>
+    <string name="map_me">Show Map</string>
+    <string name="app_title">iReminders</string>
+    <string name="search_nearby">Search Nearby</string>
+    
+    <!-- Bookmark Places -->
+    <string name="bookmark_list">Bookmarks</string>
+    <string name="add_loc">Add Bookmark</string>
+    <string name="no_bookmarks">No Bookmarks Yet</string>
+    <!-- context menu  -->
+    <string name="delete_bookmark">Delete Bookmark</string>   
+    <string name="edit_bookmark">Edit Bookmark</string>
+    <!-- bookmark edit view -->
+    <string name="bookmark_name">Name</string>
+    <string name="bookmark_addr">Address</string>
+    <string name="use_current_loc">Current Address</string>
+    <string name="specify_addr">Specify Location</string>
+    <string name="sel_addr_alert">Set reminder for this address?</string>
+    <string name="sel_addr_confirm">Confirm</string>
+	<string name="sel_addr_cancel">Choose Another</string>
+    <string name="bookmark_directions">Get Directions</string>
+    
+    <!-- BookmarkEdit -->
+    <string name="bookmark_progress_dialog_title">Saving Bookmark..</string>
+    <string name="bookmark_progress_dialog_body">Verifying Address..</string>
+    
+        
+    <!-- Reminder List -->
+    <string name="reminder_list">Reminders</string>
+    <string name="no_reminders">No Reminders Yet</string>
+    <string name="add_reminder">Add Reminder</string>
+    <!-- reminder entry -->
+    <string name="title_label">Title: </string>
+    <string name="addr_label">Address: </string>
+    <string name="state_label">Status: </string>
+    <string name="range_label">Range: </string>
+    <string name="event_label">Trigger: </string>
+    <string name="on_entry_label">On entry</string>
+    <string name="on_exit_label">On exit</string>
+    <string name="on_entry_exit_label">On entry and exit</string>
+    <!-- list view fields -->
+    <string name="active">Enabled</string>
+    <string name="inactive">Disabled</string> 
+    <!-- options menu  -->
+    <string name="start_rem_svc">Start Reminder Service</string>
+    <string name="stop_rem_svc">Stop Reminder Service</string>
+    <!-- context menu -->
+    <string name="delete_reminder">Delete Reminder</string>   
+    <string name="edit_reminder">Edit Reminder</string>
+          
+    <!-- Reminder Edit  -->
+    <string name="title">Title </string>
+    <string name="addr">Address </string>
+    <string name="body">Body</string>
+    <string name="confirm">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="enable">Enable </string>
+    <string name="disable">Disable </string>
+    <string name="alert">Alert </string>
+    <string name="ring">Ring </string>
+    <string name="vibrate">Vibrate </string>
+    <string name="flash">Flash </string>
+    <string name="status">Status </string>
+    <string name="range">Range </string>
+    <string name="range_units">miles</string>
+    <string name="event">Trigger On</string>
+    <string name="on_entry">Entry</string>
+    <string name="on_exit">Exit</string>    
+    <string name="rem_progress_dialog_title">Saving Reminder..</string>
+    <string name="rem_progress_dialog_body">Verifying Data..</string>
+    <string name="invalid_address">Cannot validate address. Please enter a valid address.</string>
+    <string name="save_error">Error saving reminder data. Please try again.</string>
+    <string name="range_prompt">Choose range</string>
+    <string-array name="planets_array">
+        <item>0.25</item>
+        <item>0.50</item>
+        <item>0.75</item>
+        <item>1.00</item>
+        <item>1.25</item>
+        <item>1.50</item>
+        <item>1.75</item>
+        <item>2.00</item>
+    </string-array>
+    <string name="from_bookmarks">Select From Bookmarks</string>
+    
+    <string name="my_current_addr">Address of my current location</string>
+    
+    <!-- Reminder Service -->
+    <string name="reminder_service_started">Reminder Service Started</string>
+    <string name="reminder_service_stopped">Reminder Service Stopped</string>
+    <string name="reminder_service_label">iReminders</string>
+    <string name="new_reminder">New Reminder</string>
+        
+    <!-- Search Nearby -->
+    <string name="my_address">Search Near:</string>
+    <string name="no_places">No Places</string>
+    <string name="search_label">Find:</string>
+    <string name="search_button">Search</string>
+    <string name="directions">Directions</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="next_page">Next</string>
+    <string name="prev_page">Prev</string>
+    <string name="no_results">No Matches</string>
+    <string name="directions_header">Map and Directions</string>
+    <string name="directions_title">Get Driving Directions</string>
+    <string name="close_dialog">Close</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="coffee">Coffee</string>
+    <string name="pizza">Pizza</string>
+    <string name="gas">Gas</string>
+    
+    
+</resources>

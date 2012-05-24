@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/black_bg"
+	android:id="@+id/bookmark_edit_layout"	
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+
+
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+   <!-- Name -->	
+	<LinearLayout android:orientation="vertical"
+		android:id="@+id/name_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/bookmark_name" />
+		<EditText android:id="@+id/bookmark_name" 
+		  android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+
+    <View
+            android:id="@+id/sep_bmark_edit0"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+
+	<!-- Address -->
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/bookmark_addr" />
+		<EditText android:id="@+id/bookmark_addr" 
+		  	android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center"/>
+	</LinearLayout>
+
+	<!-- Address selection buttons -->
+	
+	    <View
+            android:id="@+id/sep_bmark_edit1"
+            android:layout_height="2px"
+            android:layout_width="fill_parent"
+            android:background="#DDFFDD"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"/>
+	    <LinearLayout android:orientation="horizontal" android:gravity="right" android:layout_height="wrap_content" android:layout_width="fill_parent">
+	        <Button android:textSize="12sp" android:text="@string/use_current_loc" android:id="@+id/current_loc" android:layout_height="40dip" android:textStyle="bold" android:layout_width="120dip"></Button>
+	    </LinearLayout>
+	
+
+   </LinearLayout>
+
+
+	<!-- Confirm/Cancel/Delete Buttons -->
+	
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		>
+
+		<Button android:id="@+id/save_bookmark" 
+	  		android:text="@string/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+			
+		<Button android:id="@+id/cancel_bookmark" 
+	  		android:text="@string/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />	
+			
+	    <Button android:id="@+id/delete_bookmark" 
+	  		android:text="@string/delete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />			
+	
+	</LinearLayout>
+
+</RelativeLayout>	

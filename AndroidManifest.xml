@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.app.iReminder" android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+
+	<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+	<uses-permission android:name="android.permission.LOCATION" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+	<uses-permission android:name="android.permission.STATUS_BAR" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+
+	<application android:icon="@drawable/red_pushpin"
+		android:label="@string/app_title" android:debuggable="true">
+
+		<!-- must be under application node -->
+		<uses-library android:name="com.google.android.maps" />
+
+
+		<activity android:name=".Home" android:label="@string/app_title">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ReminderList" />
+
+		<activity android:name=".ReminderEdit" />
+
+		<activity android:name=".MapMe" android:theme="@android:style/Theme.NoTitleBar" />
+
+		<activity android:name=".SearchNearby" />
+
+		<activity android:name=".BookmarkList" />
+
+		<activity android:name="com.app.iReminder.BookmarkEdit" />
+
+		<!-- intent filter for reminder service -->
+		<service android:name="com.app.iReminder.ReminderService">
+			<intent-filter>
+				<action android:name="com.app.iReminder.ReminderService" />
+			</intent-filter>
+		</service>
+
+		<!-- broadcast receiver to auto start reminder service -->
+		<receiver android:name="com.app.iReminder.RemSvcAutoStarter">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+
+
+	</application>
+	<uses-sdk android:minSdkVersion="4" />
+
+</manifest> 
